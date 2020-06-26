@@ -238,4 +238,4 @@
             max-width: 60%;
         }
     }
-</style>`
+</style>
