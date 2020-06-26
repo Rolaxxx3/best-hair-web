@@ -2,46 +2,46 @@
     <div id="advantages">
         <div class="advantages--content-wrapper">
             <span class="advantages--title">
-                Our advantages
+                Наши преимущества
             </span>
             <div class="advantages--list-wrapper">
                 <div class="advantages--list-line" />
-                <advantage description="12 years of experience">
+                <advantage description="12 лет опыта работы">
                     <img
                             class="advantages--list-icon"
                             src="../../../../assets/icons/circle_confirm.svg"
                             alt="error"
                     />
                 </advantage>
-                <advantage description="we use cosmetics from one of the best world brands">
+                <advantage description="мы используем косметику одного из лучших косметических брендов">
                     <img
                             class="advantages--list-icon"
                             src="../../../../assets/icons/cosmetic.svg"
                             alt="error"
                     />
                 </advantage>
-                <advantage description="team of professionals">
+                <advantage description="команда профессионалов">
                     <img
                             class="advantages--list-icon"
                             src="../../../../assets/icons/people.svg"
                             alt="error"
                     />
                 </advantage>
-                <advantage description="safe service">
+                <advantage description="безопасный сервис">
                     <img
                             class="advantages--list-icon"
                             src="../../../../assets/icons/gloves.svg"
                             alt="error"
                     />
                 </advantage>
-                <advantage description="stylish interior">
+                <advantage description="стильный интерьер">
                     <img
                             class="advantages--list-icon"
                             src="../../../../assets/icons/sofa.svg"
                             alt="error"
                     />
                 </advantage>
-                <advantage description="execution of paints of any complexity">
+                <advantage description="выполнение покрасок любой сложности">
                     <img
                             class="advantages--list-icon"
                             src="../../../../assets/icons/brush.svg"
@@ -63,8 +63,9 @@
 
 <style lang="scss" scoped>
     #advantages {
-        height: 100vh;
+        height: 100%;
         background-image: url("../../../../assets/images/background_advantages.png");
+        background-repeat: no-repeat;
         overflow: hidden;
         min-height: 800px;
     }
@@ -86,6 +87,7 @@
     .advantages--list-line {
         position: absolute;
         background-image: url("../../../../assets/images/advantages_line.svg");
+        background-repeat: no-repeat;
         width: 14px;
         height: 76%;
         min-height: 600px;
@@ -105,8 +107,13 @@
         }
     }
     @media all and (max-width: 550px) {
+        .advantages--list-icon {
+            max-width: 20px;
+            max-height: 20px;
+        }
         .advantages--title {
-            font-size: 54px;
+            font-size: 50px;
+            line-height: 50px;
         }
     }
 </style>

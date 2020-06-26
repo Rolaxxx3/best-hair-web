@@ -17,7 +17,7 @@
                     </div>
                     <div class="about--title-wrapper">
                         <span class="about--title">BEST HAIR</span>
-                        <span class="about--subtitle">BEAUTY SALON</span>
+                        <span class="about--subtitle">САЛОН КРАСОТЫ</span>
                     </div>
                     <div class="about--burger-menu" @click="changeDisplayNavbar()">
                         <p class="about--menu-line" />
@@ -28,22 +28,22 @@
             </div>
             <div class="about--wrapper-row">
                 <div class="about--text-wrapper">
-                    <span class="about--description">Hairdressing salon since 2008</span>
+                    <span class="about--description">Парикмахерская с 2008</span>
                 </div>
                 <a
                     class="about--button-link"
                     href="#"
                     v-scroll-to="'#services'"
                 >
-                    <span class="about--button-text">Explore our services</span>
+                    <span class="about--button-text">Ознакомиться с нашими услугами</span>
                 </a>
                 <div class="about--text-wrapper">
-                    <span class="about--description">Professional color studio since 2010</span>
+                    <span class="about--description">Профессиональная студия цвета с 2010</span>
                 </div>
             </div>
             <div class="about--wrapper-scroll">
                 <span class="about--text-scroll">
-                    Learn more
+                    Узнать больше
                 </span>
                 <img
                         class="about--arrow-down"
@@ -212,7 +212,7 @@
             font-size: 24px;
         }
     }
-    @media all and (max-width: 550px) {
+    @media all and (max-width: 800px) {
         .about--title {
             margin-bottom: 12px;
         }
@@ -233,6 +233,9 @@
         }
         .about--text-wrapper {
             max-width: 200px;
+        }
+        .about--button-link {
+            max-width: 60%;
         }
     }
 </style>`

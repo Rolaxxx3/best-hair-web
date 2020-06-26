@@ -1,10 +1,10 @@
 <template>
     <div id="values">
-        <span class="values--title">Our values</span>
+        <span class="values--title">Наши ценности</span>
         <div class="values--value-wrapper">
             <value
-                title="Learn new everyday"
-                description="Every new day, we have reason to be proud of what has been done and the opportunity to learn something new. We are always hungry for new achievements."
+                title="Каждый день изучаем новое"
+                description="Каждый новый день у нас - повод гордиться тем, что сделано, и возможность узнать что-то новое. Мы всегда голодны до новых знаний."
             >
                 <img
                     alt="error"
@@ -12,8 +12,8 @@
                 />
             </value>
             <value
-                    title="Expanding horizons"
-                    description="We are actively working on ourselves so that all our customers remain in the trend of modern haircuts and dyes."
+                    title="Расширяем горизонты"
+                    description="Мы активно работаем над собой, чтобы все наши клиенты оставались в тренде современных стрижек и красок."
             >
                 <img
                         alt="error"
@@ -21,8 +21,8 @@
                 />
             </value>
             <value
-                    title="We maintain a reputation"
-                    description="We are fans of our work and the creation of every style. We put maximum effort. Clients value our work, because for us the most important thing is that the client is satisfied."
+                    title="Ценим нашу репутацию"
+                    description="Мы - фанаты своего дела, и к созданию каждой стрижки прикладываем максимум усилий. Клиенты ценят наши работы из-за высоких стандартов качества."
             >
                 <img
                         alt="error"
@@ -30,8 +30,8 @@
                 />
             </value>
             <value
-                    title="Sharing experience"
-                    description="Our employees often travel in search of new knowledge. Having learned something new, we share it with each other. This allows us to keep up with global trends."
+                    title="Делимся опытом"
+                    description="Наши сотрудники часто путешествуют в поисках новых знаний. Узнав что-то новое, мы делимся этим друг с другом. Это позволяет нам не отставать от мировых тенденций."
             >
                 <img
                         alt="error"
@@ -88,19 +88,21 @@
         .values--value-wrapper {
             grid-template-columns: repeat(1, 500px);
             grid-template-rows: repeat(4, 400px);
-            grid-row-gap: 0;
             justify-content: center;
         }
     }
     @media all and (max-width: 520px) {
+        .values--value-wrapper {
+            grid-template-columns: repeat(1, 300px);
+            grid-template-rows: repeat(4, 400px);
+            justify-content: center;
+        }
+    }
+    @media all and (max-width: 550px) {
         .values--title {
             margin-bottom: 25px;
-        }
-        .values--value-wrapper {
-            grid-template-columns: repeat(1, 350px);
-            grid-template-rows: repeat(4, 375px);
-            grid-row-gap: 0;
-            justify-content: center;
+            font-size: 50px;
+            line-height: 50px;
         }
     }
 </style>

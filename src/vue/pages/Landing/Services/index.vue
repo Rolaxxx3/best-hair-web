@@ -1,38 +1,38 @@
 <template>
     <div id="services">
-        <span class="services--title">Our services</span>
+        <span class="services--title">Наши услуги</span>
         <div class="services--wrapper">
-            <service description="Haircuts, styling">
+            <service description="Стрижки, укладки">
                 <img
                         src="../../../../assets/icons/scisors.svg"
                         alt="error"
                 />
             </service>
-            <service description="Coloring any complexity">
+            <service description="Покраски любой сложности">
                 <img
                         src="../../../../assets/icons/brush.svg"
                         alt="error"
                 />
             </service>
-            <service description="Care procedures">
+            <service description="Процедуры ухода">
                 <img
                         src="../../../../assets/icons/leaf.svg"
                         alt="error"
                 />
             </service>
-            <service description="Assistance in the selection of cosmetics">
+            <service description="Помощь в подборе косметики">
                 <img
                         src="../../../../assets/icons/certificate.svg"
                         alt="error"
                 />
             </service>
-            <service description="Eyebrow correction and coloring">
+            <service description="Коррекция и покраска бровей">
                 <img
                         src="../../../../assets/icons/mirror.svg"
                         alt="error"
                 />
             </service>
-            <service description="Baby haircuts">
+            <service description="Детские стрижки">
                 <img
                         src="../../../../assets/icons/baby.svg"
                         alt="error"
@@ -79,21 +79,23 @@
     @media all and (max-width: 847px) {
         .services--wrapper {
             grid-template-columns: repeat(2, 200px);
-            grid-template-rows: repeat(3, 300px);
+            grid-template-rows: repeat(3, 320px);
             grid-row-gap: 5vh;
         }
     }
     @media all and (max-width: 500px) {
         .services--wrapper {
             grid-template-columns: repeat(1, 200px);
-            grid-template-rows: repeat(6, 300px);
+            grid-template-rows: repeat(6, max(320px));
             grid-row-gap: 5vh;
             justify-content: center;
         }
     }
     @media all and (max-width: 550px) {
         .services--title {
-            font-size: 54px;
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 40px;
         }
     }
 </style>

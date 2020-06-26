@@ -21,28 +21,28 @@
                         href="#"
                         v-scroll-to="'#about'"
             >
-                About us
+                Про нас
             </a>
             <a
                     href="#"
                     class="navbar--link"
                     v-scroll-to="'#services'"
             >
-                Our services
+                Наши услуги
             </a>
             <a
                     href="#"
                     class="navbar--link"
                     v-scroll-to="'#advantages'"
             >
-                Our advantages
+                Наши преимущества
             </a>
             <a
                     class="navbar--link"
                     href="#"
                     v-scroll-to="'#values'"
             >
-                Our values
+                Наши ценности
             </a>
             <a
                     class="navbar--link"
@@ -50,13 +50,13 @@
                     v-scroll-to="'#team'"
 
             >
-                Our team
+                Наша команда
             </a>
             <a
                     class="navbar--link"
                     href="#"
             >
-                How to find us
+                Как нас найти
             </a>
         </div>
     </div>
@@ -87,7 +87,6 @@
         flex-direction: column;
     }
     .navbar {
-        box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.25);
         height: 100vh;
         padding-top: 2vh;
         padding-bottom: 2vh;
@@ -96,12 +95,12 @@
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
-        left: 100vw;
+        left: 101vw;
         top: 0;
         transition: 0.25s;
     }
     .navbar__active {
-        left: calc(#{100vw} - #{500px});
+        left: calc(#{101vw} - #{500px});
     }
 
     .navbar--menu-wrapper {

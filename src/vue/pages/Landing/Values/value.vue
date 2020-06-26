@@ -45,7 +45,7 @@
         text-align: left;
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     }
-    @media all and (max-width: 520px){
+    @media all and (max-width: 520px) {
         .value--description {
             font-size: 20px;
         }
@@ -53,6 +53,9 @@
             font-size: 36px;
             line-height: 40px;
             margin-bottom: 20px;
+        }
+        .value--content-wrapper {
+            margin-left: 5px;
         }
     }
 </style>
