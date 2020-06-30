@@ -59,6 +59,13 @@
             >
                 Как нас найти
             </a>
+            <a
+                    class="navbar--link"
+                    href="#"
+                    v-scroll-to="'#copyright'"
+            >
+                Расписание работы
+            </a>
         </div>
     </div>
 </template>
@@ -128,6 +135,10 @@
             background: #1565C0;
             color: #ffffff;
             text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &:last-child {
+            margin-top: 10vh;
         }
     }
     .navbar--burger-wrapper {

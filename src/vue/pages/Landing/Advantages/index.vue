@@ -97,7 +97,7 @@
         margin-top: -80px;
     }
     .advantages--list-icon {
-        max-width: 45px;
+        width: 45px;
         max-height: 45px;
     }
     @media all and (max-width: 1060px) {

@@ -86,7 +86,7 @@
     @media all and (max-width: 500px) {
         .services--wrapper {
             grid-template-columns: repeat(1, 200px);
-            grid-template-rows: repeat(6, max(320px));
+            grid-template-rows: repeat(6, max(350px));
             grid-row-gap: 5vh;
             justify-content: center;
         }

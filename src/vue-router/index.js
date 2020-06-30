@@ -11,6 +11,10 @@ const router = new Router({
         {
             path: '/',
             component: Landing,
+        },
+        {
+            path: '*',
+            redirect: '/    '
         }
     ]
 })

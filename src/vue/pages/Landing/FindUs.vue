@@ -5,8 +5,8 @@
                 :id="name"
         />
         <div class="find-us--text-wrapper">
-            <span>Салон красоты "Best Hair"</span>
-            <span>Кременчук, ул. Воинов-Интернационалистов 13</span>
+            <span class="find-us--title">Салон красоты "Best Hair"</span>
+            <span class="find-us--subtitle">Кременчук, ул. Воинов-Интернационалистов 13</span>
         </div>
     </div>
 </template>
@@ -91,16 +91,56 @@
     #find-us {
         height: 100vh;
         width: 100vw;
+        overflow: hidden;
     }
     .find-us--map {
         height: 100%;
         width: 100%;
     }
     .find-us--text-wrapper {
-        position: absolute;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        top: auto;
+        bottom: 300px;
+        left: 150px;
+        height: 0;
+    }
+    .find-us--title {
+        font-family: Libre Baskerville, serif;
+        font-size: 84px;
+        line-height: 100px;
+        color: #000000;
+    }
+    .find-us--subtitle {
+        font-family: Libre Baskerville, serif;
+        font-size: 48px;
+        line-height: 52px;
+        color: #000000;
+    }
+    @media all and (max-width: 1200px) {
+        .find-us--title {
+            font-size: 64px;
+            line-height: 70px;
+        }
+        .find-us--subtitle {
+            font-size: 36px;
+            line-height: 40px;
+        }
+        .find-us--text-wrapper {
+            bottom: 200px;
+            left: 100px;
+        }
+    }
+    @media all and (max-width: 900px) {
+        .find-us--text-wrapper {
+            bottom: 200px;
+            left: 50px;
+        }
+    }
+    @media all and (max-width: 800px) {
+        .find-us--text-wrapper {
+            display: none;
+        }
     }
 </style>

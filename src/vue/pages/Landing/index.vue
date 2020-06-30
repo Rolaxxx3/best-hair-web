@@ -6,6 +6,7 @@
         <values />
         <team />
         <find-us name="map" />
+        <copyright />
         <navbar
                 :display="isNavbarShow"
                 @closeNavbar="isNavbarShow = false"
@@ -21,9 +22,11 @@
     import Navbar from "./Navbar";
     import Team from "./Team";
     import FindUs from "./FindUs";
+    import Copyright from "./Copyright";
     export default {
         name: "index.vue",
         components: {
+            Copyright,
             FindUs,
             Team,
             Navbar,
