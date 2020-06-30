@@ -52,6 +52,7 @@
     @media all and (max-width: 1060px) {
         .advantage--name {
             font-size: 18px;
+            line-height: 18px;
         }
         .advantage {
             height: 30px;
@@ -59,6 +60,12 @@
         .advantage--arrow {
             height: 30px;
             width: 45px;
+        }
+    }
+    @media all and (max-width: 360px) {
+        .advantage--name {
+            font-size: 15px;
+            line-height: 15px;
         }
     }
 

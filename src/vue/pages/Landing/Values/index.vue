@@ -94,7 +94,7 @@
     @media all and (max-width: 520px) {
         .values--value-wrapper {
             grid-template-columns: repeat(1, 300px);
-            grid-template-rows: repeat(4, 400px);
+            grid-template-rows: repeat(4, 470px);
             justify-content: center;
         }
     }

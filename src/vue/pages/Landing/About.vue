@@ -71,6 +71,7 @@
 
 <style lang="scss" scoped>
     #about {
+        min-height: 660px;
         height: 100%;
         background-image: url("../../../assets/images/landing_background.png");
         background-position: center;
@@ -167,6 +168,7 @@
         transition-duration: 0.25s;
         margin-right: 30px;
         margin-left: 30px;
+        width: 20vw;
 
         &:hover {
             border-color: #1565C0;
