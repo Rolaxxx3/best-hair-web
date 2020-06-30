@@ -5,6 +5,7 @@
         <advantages />
         <values />
         <team />
+        <find-us name="map" />
         <navbar
                 :display="isNavbarShow"
                 @closeNavbar="isNavbarShow = false"
@@ -19,9 +20,11 @@
     import Values from "./Values";
     import Navbar from "./Navbar";
     import Team from "./Team";
+    import FindUs from "./FindUs";
     export default {
         name: "index.vue",
         components: {
+            FindUs,
             Team,
             Navbar,
             Values,
@@ -29,7 +32,7 @@
             Services,
             Advantages
         },
-        data: function () {
+        data: () => {
             return {
                 isNavbarShow: false,
             }

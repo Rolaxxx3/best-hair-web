@@ -55,6 +55,7 @@
             <a
                     class="navbar--link"
                     href="#"
+                    v-scroll-to="'#find-us'"
             >
                 Как нас найти
             </a>
