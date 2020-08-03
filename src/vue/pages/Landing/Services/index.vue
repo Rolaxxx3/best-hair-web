@@ -1,7 +1,7 @@
 <template>
     <div id="services">
-        <span class="services--title">Наши услуги</span>
-        <div class="services--wrapper">
+        <span class="services__title">Наши услуги</span>
+        <div class="services__wrapper">
             <service description="Стрижки, укладки">
                 <img
                         src="../../../../assets/icons/scisors.svg"
@@ -60,7 +60,7 @@
         padding: 2.5% 5%;
         justify-content: space-between;
     }
-    .services--title {
+    .services__title {
         font-family: Libre Baskerville, serif;
         font-size: 72px;
         line-height: 89px;
@@ -68,7 +68,7 @@
         color: #003C8F;
         margin-bottom: 100px;
     }
-    .services--wrapper {
+    .services__wrapper {
         display: grid;
         justify-content: space-between;
         align-content: space-around;
@@ -77,14 +77,14 @@
         grid-row-gap: 4.5vh;
     }
     @media all and (max-width: 847px) {
-        .services--wrapper {
+        .services__wrapper {
             grid-template-columns: repeat(2, 200px);
             grid-template-rows: repeat(3, 320px);
             grid-row-gap: 5vh;
         }
     }
     @media all and (max-width: 500px) {
-        .services--wrapper {
+        .services__wrapper {
             grid-template-columns: repeat(1, 200px);
             grid-template-rows: repeat(6, max(350px));
             grid-row-gap: 5vh;
@@ -92,7 +92,7 @@
         }
     }
     @media all and (max-width: 550px) {
-        .services--title {
+        .services__title {
             font-size: 50px;
             line-height: 50px;
             margin-bottom: 40px;

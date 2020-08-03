@@ -1,52 +1,52 @@
 <template>
     <div id="about">
-        <div class="about--content-wrapper">
+        <div class="about__content-wrapper">
             <div>
-                <div class="about--wrapper-row">
-                    <div class="about--icons-wrapper">
+                <div class="about__wrapper-row">
+                    <div class="about__icons-wrapper">
                         <img
-                            class="about--icon"
+                            class="about__icon"
                             src="../../../assets/icons/instagram.svg"
                             alt="Error"
                         />
                         <img
-                            class="about--icon"
+                            class="about__icon"
                             src="../../../assets/icons/facebook.svg"
                             alt="Error"
                         />
                     </div>
-                    <div class="about--title-wrapper">
-                        <span class="about--title">BEST HAIR</span>
-                        <span class="about--subtitle">САЛОН КРАСОТЫ</span>
+                    <div class="about__title-wrapper">
+                        <span class="about__title">BEST HAIR</span>
+                        <span class="about__subtitle">САЛОН КРАСОТЫ</span>
                     </div>
-                    <div class="about--burger-menu" @click="changeDisplayNavbar()">
-                        <p class="about--menu-line" />
-                        <p class="about--menu-line" />
-                        <p class="about--menu-line" />
+                    <div class="about__burger-menu" @click="changeDisplayNavbar()">
+                        <p class="about__menu-line" />
+                        <p class="about__menu-line" />
+                        <p class="about__menu-line" />
                     </div>
                 </div>
             </div>
-            <div class="about--wrapper-row">
-                <div class="about--text-wrapper">
-                    <span class="about--description">Парикмахерская с 2008</span>
+            <div class="about__wrapper-row">
+                <div class="about__text-wrapper">
+                    <span class="about__description">Парикмахерская с 2008</span>
                 </div>
                 <a
-                    class="about--button-link"
+                    class="about__button-link"
                     href="#"
                     v-scroll-to="'#services'"
                 >
-                    <span class="about--button-text">Ознакомиться с нашими услугами</span>
+                    <span class="about__button-text">Ознакомиться с нашими услугами</span>
                 </a>
-                <div class="about--text-wrapper">
-                    <span class="about--description">Профессиональная студия цвета с 2010</span>
+                <div class="about__text-wrapper">
+                    <span class="about__description">Профессиональная студия цвета с 2010</span>
                 </div>
             </div>
-            <div class="about--wrapper-scroll">
-                <span class="about--text-scroll">
+            <div class="about__wrapper-scroll">
+                <span class="about__text-scroll">
                     Узнать больше
                 </span>
                 <img
-                        class="about--arrow-down"
+                        class="about__arrow-down"
                         src="../../../assets/icons/arrow_down.svg"
                         alt="Error"
                 />
@@ -78,7 +78,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .about--content-wrapper {
+    .about__content-wrapper {
         padding: 2.5% 5% 0;
         background: rgba(29, 29, 29, 0.69);
         height: 100%;
@@ -86,18 +86,18 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    .about--wrapper-row {
+    .about__wrapper-row {
         display: flex;
         justify-content: space-between;
         margin-bottom: 28px;
     }
-    .about--wrapper-scroll {
+    .about__wrapper-scroll {
         display: flex;
         justify-content: center;
         flex-direction: column;
         margin-bottom: 5%;
     }
-    .about--text-scroll {
+    .about__text-scroll {
         align-self: center;
         font-family: Libre Baskerville, serif;
         font-size: 24px;
@@ -107,23 +107,23 @@
         border-bottom: 1px solid #FFFFFF;
         margin-bottom: 20px;
     }
-    .about--title {
+    .about__title {
         color: #ffffff;
         font-family: Trajan Pro, serif;
         font-size: 84px;
         line-height: 64px;
         margin-bottom: 24px;
     }
-    .about--subtitle {
+    .about__subtitle {
         font-family: Trajan Pro, serif;
         font-size: 36px;
         color: #ffffff;
     }
-    .about--title-wrapper {
+    .about__title-wrapper {
         display: flex;
         flex-direction: column;
     }
-    .about--menu-line {
+    .about__menu-line {
         height: 4px;
         width: 46px;
         background-color: white;
@@ -135,12 +135,12 @@
             margin-block-end: 0;
         }
     }
-    .about--icons-wrapper {
+    .about__icons-wrapper {
         width: 128px;
         display: flex;
         justify-content: space-between;
     }
-    .about--icon {
+    .about__icon {
         width: 36px;
         height: 36px;
         border-radius: 50%;
@@ -150,17 +150,17 @@
             filter: invert(26%) sepia(79%) saturate(7181%) hue-rotate(204deg) brightness(94%) contrast(84%);
         }
     }
-    .about--burger-menu {
+    .about__burger-menu {
         cursor: pointer;
         margin-left: 7%;
     }
-    .about--description {
+    .about__description {
         max-width: 300px;
         font-family: Libre Baskerville, serif;
         color: #ffffff;
         font-size: 32px;
     }
-    .about--button-link {
+    .about__button-link {
         text-decoration: none;
         border-radius: 3px;
         border: 2px solid #FFFFFF;
@@ -168,7 +168,7 @@
         transition-duration: 0.25s;
         margin-right: 30px;
         margin-left: 30px;
-        width: 20vw;
+        width: 25vw;
 
         &:hover {
             border-color: #1565C0;
@@ -176,49 +176,52 @@
             text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         }
     }
-    .about--button-text {
+    .about__button-text {
         font-size: 36px;
         color: #ffffff;
         letter-spacing: 0.05em;
         font-family: Libre Baskerville, serif;
     }
-    .about--text-wrapper {
+    .about__text-wrapper {
         max-width: 300px;
     }
     @media all and (max-width: 1191px) {
-        .about--button-link {
+        .about__button-link {
             padding: 20px 30px;
         }
-        .about--button-text {
+        .about__button-text {
             font-size: 28px;
         }
-        .about--description {
+        .about__description {
             font-size: 28px;
         }
-        .about--text-scroll {
+        .about__text-scroll {
             font-size: 20px;
         }
     }
     @media all and (max-width: 900px) {
-        .about--title {
+        .about__title {
             font-size: 52px;
             line-height: 48px;
         }
-        .about--subtitle {
+        .about__subtitle {
             font-family: Trajan Pro, serif;
             font-size: 24px;
         }
     }
     @media all and (max-width: 900px) and (max-height: 400px){
-        .about--button-text {
+        .about__button-text {
             font-size: 24px;
         }
     }
     @media all and (max-width: 800px) {
-        .about--title {
+        .about__title {
             margin-bottom: 12px;
         }
-        .about--wrapper-row {
+        .about__button-link {
+            width: 50vw;
+        }
+        .about__wrapper-row {
             flex-direction: column;
             align-items: center;
 
@@ -226,17 +229,17 @@
                 flex-direction: row;
             }
         }
-        .about--text-wrapper {
+        .about__text-wrapper {
             margin-bottom: 10%;
             margin-top: 10%;
         }
-        .about--description {
+        .about__description {
             font-size: 24px;
         }
-        .about--text-wrapper {
+        .about__text-wrapper {
             max-width: 200px;
         }
-        .about--button-link {
+        .about__button-link {
             max-width: 60%;
         }
     }

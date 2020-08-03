@@ -1,12 +1,12 @@
 <template>
     <div id="find-us">
         <div
-                class="find-us--map"
+                class="find-us__map"
                 :id="name"
         />
-        <div class="find-us--text-wrapper">
-            <span class="find-us--title">Салон красоты "Best Hair"</span>
-            <span class="find-us--subtitle">Кременчук, ул. Воинов-Интернационалистов 13</span>
+        <div class="find-us__text-wrapper">
+            <span class="find-us__title">Салон красоты "Best Hair"</span>
+            <span class="find-us__subtitle">Кременчук, ул. Воинов-Интернационалистов 13</span>
         </div>
     </div>
 </template>
@@ -93,11 +93,11 @@
         width: 100vw;
         overflow: hidden;
     }
-    .find-us--map {
+    .find-us__map {
         height: 100%;
         width: 100%;
     }
-    .find-us--text-wrapper {
+    .find-us__text-wrapper {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -106,40 +106,40 @@
         left: 150px;
         height: 0;
     }
-    .find-us--title {
+    .find-us__title {
         font-family: Libre Baskerville, serif;
         font-size: 84px;
         line-height: 100px;
         color: #000000;
     }
-    .find-us--subtitle {
+    .find-us__subtitle {
         font-family: Libre Baskerville, serif;
         font-size: 48px;
         line-height: 52px;
         color: #000000;
     }
     @media all and (max-width: 1200px) {
-        .find-us--title {
+        .find-us__title {
             font-size: 64px;
             line-height: 70px;
         }
-        .find-us--subtitle {
+        .find-us__subtitle {
             font-size: 36px;
             line-height: 40px;
         }
-        .find-us--text-wrapper {
+        .find-us__text-wrapper {
             bottom: 200px;
             left: 100px;
         }
     }
     @media all and (max-width: 900px) {
-        .find-us--text-wrapper {
+        .find-us__text-wrapper {
             bottom: 200px;
             left: 50px;
         }
     }
     @media all and (max-width: 800px) {
-        .find-us--text-wrapper {
+        .find-us__text-wrapper {
             display: none;
         }
     }

@@ -1,49 +1,49 @@
 <template>
     <div id="advantages">
-        <div class="advantages--content-wrapper">
-            <span class="advantages--title">
+        <div class="advantages__content-wrapper">
+            <span class="advantages__title">
                 Наши преимущества
             </span>
-            <div class="advantages--list-wrapper">
-                <div class="advantages--list-line" />
+            <div class="advantages__list-wrapper">
+                <div class="advantages__list-line" />
                 <advantage description="12 лет опыта работы">
                     <img
-                            class="advantages--list-icon"
+                            class="advantages__list-icon"
                             src="../../../../assets/icons/circle_confirm.svg"
                             alt="error"
                     />
                 </advantage>
                 <advantage description="мы используем косметику одного из лучших косметических брендов">
                     <img
-                            class="advantages--list-icon"
+                            class="advantages__list-icon"
                             src="../../../../assets/icons/cosmetic.svg"
                             alt="error"
                     />
                 </advantage>
                 <advantage description="команда профессионалов">
                     <img
-                            class="advantages--list-icon"
+                            class="advantages__list-icon"
                             src="../../../../assets/icons/people.svg"
                             alt="error"
                     />
                 </advantage>
                 <advantage description="безопасный сервис">
                     <img
-                            class="advantages--list-icon"
+                            class="advantages__list-icon"
                             src="../../../../assets/icons/gloves.svg"
                             alt="error"
                     />
                 </advantage>
                 <advantage description="стильный интерьер">
                     <img
-                            class="advantages--list-icon"
+                            class="advantages__list-icon"
                             src="../../../../assets/icons/sofa.svg"
                             alt="error"
                     />
                 </advantage>
                 <advantage description="выполнение покрасок любой сложности">
                     <img
-                            class="advantages--list-icon"
+                            class="advantages__list-icon"
                             src="../../../../assets/icons/brush.svg"
                             alt="error"
                     />
@@ -66,17 +66,19 @@
         height: 100%;
         background-image: url("../../../../assets/images/background_advantages.png");
         background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         overflow: hidden;
         min-height: 800px;
     }
-    .advantages--content-wrapper {
+    .advantages__content-wrapper {
         padding: 2.5% 5%;
         height: 100%;
         background: rgba(0, 60, 143, 0.75);
         display: flex;
         flex-direction: column;
     }
-    .advantages--title {
+    .advantages__title {
         font-family: Libre Baskerville, serif;
         font-size: 72px;
         line-height: 89px;
@@ -84,7 +86,7 @@
         margin-bottom: 100px;
         align-self: center;
     }
-    .advantages--list-line {
+    .advantages__list-line {
         position: absolute;
         background-image: url("../../../../assets/images/advantages_line.svg");
         background-repeat: no-repeat;
@@ -96,22 +98,22 @@
         fill: rgba(255,255,255, 0.75);
         margin-top: -80px;
     }
-    .advantages--list-icon {
+    .advantages__list-icon {
         width: 45px;
         max-height: 45px;
     }
     @media all and (max-width: 1060px) {
-        .advantages--list-icon {
+        .advantages__list-icon {
             max-width: 30px;
             max-height: 30px;
         }
     }
     @media all and (max-width: 550px) {
-        .advantages--list-icon {
+        .advantages__list-icon {
             max-width: 20px;
             max-height: 20px;
         }
-        .advantages--title {
+        .advantages__title {
             font-size: 50px;
             line-height: 50px;
         }
