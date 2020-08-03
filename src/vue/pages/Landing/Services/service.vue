@@ -1,9 +1,9 @@
 <template>
     <div class="service">
-        <div class="service--image-wrapper">
+        <div class="service__image-wrapper">
             <slot />
         </div>
-        <span class="service--description">{{ description }}</span>
+        <span class="service__description">{{ description }}</span>
     </div>
 </template>
 
@@ -22,7 +22,7 @@
         display: flex;
         flex-direction: column;
     }
-    .service--image-wrapper {
+    .service__image-wrapper {
         background-color: #1565C0;
         border-radius: 50%;
         width: 192px;
@@ -32,7 +32,7 @@
         align-items: center;
         align-self: center;
     }
-    .service--description {
+    .service__description {
         color: #00347B;
         align-self: center;
         font-family: Libre Baskerville, serif;

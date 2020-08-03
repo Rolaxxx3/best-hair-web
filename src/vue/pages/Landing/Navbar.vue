@@ -1,23 +1,23 @@
 <template>
     <div
             class="navbar"
-            :class="{ 'navbar__active': display }"
+            :class="{ 'navbar--active': display }"
     >
         <div
                 @click="closeNavbar()"
-                class="navbar--burger-wrapper"
+                class="navbar__burger-wrapper"
         >
-            <div class="navbar--menu-wrapper">
-                <p class="navbar--menu-line" />
-                <p class="navbar--menu-line" />
+            <div class="navbar__menu-wrapper">
+                <p class="navbar__menu-line" />
+                <p class="navbar__menu-line" />
             </div>
         </div>
         <div
-                class="navbar--links-wrapper"
+                class="navbar__links-wrapper"
                 @click="closeNavbar()"
         >
             <a
-                        class="navbar--link"
+                        class="navbar__link"
                         href="#"
                         v-scroll-to="'#about'"
             >
@@ -25,27 +25,27 @@
             </a>
             <a
                     href="#"
-                    class="navbar--link"
+                    class="navbar__link"
                     v-scroll-to="'#services'"
             >
                 Наши услуги
             </a>
             <a
                     href="#"
-                    class="navbar--link"
+                    class="navbar__link"
                     v-scroll-to="'#advantages'"
             >
                 Наши преимущества
             </a>
             <a
-                    class="navbar--link"
+                    class="navbar__link"
                     href="#"
                     v-scroll-to="'#values'"
             >
                 Наши ценности
             </a>
             <a
-                    class="navbar--link"
+                    class="navbar__link"
                     href="#"
                     v-scroll-to="'#team'"
 
@@ -53,14 +53,14 @@
                 Наша команда
             </a>
             <a
-                    class="navbar--link"
+                    class="navbar__link"
                     href="#"
                     v-scroll-to="'#find-us'"
             >
                 Как нас найти
             </a>
             <a
-                    class="navbar--link"
+                    class="navbar__link"
                     href="#"
                     v-scroll-to="'#copyright'"
             >
@@ -89,7 +89,7 @@
 </script>
 
 <style lang="scss" scoped>
-    .navbar--links-wrapper {
+    .navbar__links-wrapper {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -107,16 +107,16 @@
         top: 0;
         transition: 0.25s;
     }
-    .navbar__active {
+    .navbar--active {
         left: calc(#{101vw} - #{500px});
     }
 
-    .navbar--menu-wrapper {
+    .navbar__menu-wrapper {
         cursor: pointer;
         width: 36px;
         height: 36px;
     }
-    .navbar--link {
+    .navbar__link {
         width: 100%;
         height: 10vh;
         cursor: pointer;
@@ -141,19 +141,19 @@
             margin-top: 10vh;
         }
     }
-    .navbar--burger-wrapper {
+    .navbar__burger-wrapper {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 15%;
     }
-    .navbar--links-wrapper {
+    .navbar__links-wrapper {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
-    .navbar--menu-line {
+    .navbar__menu-line {
         position: absolute;
         width: 45px;
         height: 5px;
@@ -171,7 +171,7 @@
         .navbar {
             width: 100%;
         }
-        .navbar__active {
+        .navbar--active {
             left: 0;
         }
     }

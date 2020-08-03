@@ -1,10 +1,10 @@
 <template>
     <div id="team">
-        <span class="team--title">Наша команда</span>
-        <div class="team--content-wrapper">
-            <div class="team--slider">
+        <span class="team__title">Наша команда</span>
+        <div class="team__content-wrapper">
+            <div class="team__slider">
                 <img
-                        class="team--slider-arrow"
+                        class="team__slider-arrow"
                         alt="error"
                         src="../../../assets/icons/slider_arrow_up.svg"
                         @click="slideUp()"
@@ -12,28 +12,30 @@
                 <img
                         :src="`data:image/png;base64, ${teamList[0].img}`"
                         alt="error"
-                        class="team--member team--member__disable"
+                        class="team__member team__member--disable"
+                        @click="slideDown()"
                 />
                 <img
                         :src="`data:image/png;base64, ${teamList[1].img}`"
                         alt="error"
-                        class="team--member"
+                        class="team__member"
                 />
                 <img
                         :src="`data:image/png;base64, ${teamList[2].img}`"
                         alt="error"
-                        class="team--member team--member__disable"
+                        class="team__member team__member--disable"
+                        @click="slideUp()"
                 />
                 <img
-                        class="team--slider-arrow"
+                        class="team__slider-arrow"
                         alt="error"
                         src="../../../assets/icons/slider_arrow_down.svg"
                         @click="slideDown()"
                 />
             </div>
-            <div class="team--description-wrapper">
-                <p class="team--description-name">{{`${teamList[1].name} ${teamList[1].surname}`}}</p>
-                <span class="team--description">{{teamList[1].description}}</span>
+            <div class="team__description-wrapper">
+                <p class="team__description-name">{{`${teamList[1].name} ${teamList[1].surname}`}}</p>
+                <span class="team__description">{{teamList[1].description}}</span>
             </div>
         </div>
     </div>
@@ -82,18 +84,18 @@
         background: linear-gradient(180deg, #1565C0 0%, #00347B 100%);
         padding: 2.5% 5%;
     }
-    .team--title {
+    .team__title {
         font-family: Libre Baskerville, serif;
         font-size: 72px;
         line-height: 89px;
         color: #FFFFFF;
     }
-    .team--content-wrapper {
+    .team__content-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .team--description-name {
+    .team__description-name {
         font-family: Libre Baskerville, serif;
         font-size: 64px;
         line-height: 77px;
@@ -101,7 +103,7 @@
         margin-block-start: 0.5em;
         margin-block-end: 0.5em;
     }
-    .team--description-wrapper {
+    .team__description-wrapper {
         min-height: 65vh;
         width: 65vw;
         background: #ffffff;
@@ -114,21 +116,21 @@
         padding-right: 5%;
         margin-left: 5%;
     }
-    .team--description {
+    .team__description {
         font-family: Libre Baskerville, serif;
         font-size: 38px;
         line-height: 47px;
         color: #000000;
         text-align: left;
     }
-    .team--slider {
+    .team__slider {
         display: flex;
         flex-direction: column;
     }
-    .team--slider-arrow {
+    .team__slider-arrow {
         cursor: pointer;
     }
-    .team--member {
+    .team__member {
         width: 200px;
         height: 200px;
         border-radius: 50%;
@@ -136,78 +138,78 @@
         margin-top: 10px;
         transition-duration: 0.25s;
     }
-    .team--member__disable {
+    .team__member--disable {
         filter: grayscale(100%);
     }
-    .team--slider-arrow {
+    .team__slider-arrow {
         margin-top: 20px;
         margin-bottom: 20px;
     }
     @media all and (max-width: 1250px) {
-        .team--content-wrapper {
+        .team__content-wrapper {
             margin-top: 5%;
         }
     }
     @media all and (max-width: 1060px) {
-        .team--description {
+        .team__description {
             font-size: 28px;
             line-height: 36px;
         }
-        .team--description-name {
+        .team__description-name {
             font-size: 50px;
             line-height: 50px;
         }
     }
     @media all and (max-width: 800px) {
-        .team--slider {
+        .team__slider {
             flex-direction: row;
             align-items: center;
         }
-        .team--content-wrapper {
+        .team__content-wrapper {
             flex-direction: column;
             align-items: center;
         }
-        .team--slider-arrow {
+        .team__slider-arrow {
             transform: rotate(-90deg);
         }
-        .team--member {
+        .team__member {
             width: 150px;
             height: 150px;
             margin-left: 1vw;
             margin-right: 1vw;
         }
-        .team--description-wrapper {
+        .team__description-wrapper {
             width: 90%;
             margin-left: 0;
         }
-        .team--slider-arrow {
+        .team__slider-arrow {
             height: 20px;
         }
     }
     @media all and (max-width: 600px) {
-        .team--member {
+        .team__member {
             width: 100px;
             height: 100px;
         }
-        .team--description {
+        .team__description {
             font-size: 26px;
             line-height: 26px;
         }
-        .team--description-name {
+        .team__description-name {
             font-size: 42px;
             line-height: 42px;
         }
-        .team--title {
+        .team__title {
             font-size: 50px;
             line-height: 50px;
         }
     }
     @media all and (max-width: 400px) {
-        .team--member {
+        .team__member {
             width: 75px;
             height: 75px;
         }
-        .team--slider-arrow {
+        .team__slider-arrow {
             margin-top: 0;
             margin-bottom: 0;
         }

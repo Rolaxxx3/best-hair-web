@@ -2,11 +2,11 @@
     <div class="advantage">
         <slot />
         <img
-                class="advantage--arrow"
+                class="advantage__arrow"
                 alt="error"
                 src="../../../../assets/images/arrow-advantage.svg"
         />
-        <span class="advantage--name">{{ description }}</span>
+        <span class="advantage__name">{{ description }}</span>
     </div>
 </template>
 
@@ -36,7 +36,7 @@
             margin-top: 150px;
         }
     }
-    .advantage--name {
+    .advantage__name {
         font-family: Libre Baskerville, serif;
         font-size: 24px;
         line-height: 20px;
@@ -44,26 +44,26 @@
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         margin-left: 20%;
     }
-    .advantage--arrow {
+    .advantage__arrow {
         position: absolute;
         left: 17%;
     }
 
     @media all and (max-width: 1060px) {
-        .advantage--name {
+        .advantage__name {
             font-size: 18px;
             line-height: 18px;
         }
         .advantage {
             height: 30px;
         }
-        .advantage--arrow {
+        .advantage__arrow {
             height: 30px;
             width: 45px;
         }
     }
     @media all and (max-width: 360px) {
-        .advantage--name {
+        .advantage__name {
             font-size: 15px;
             line-height: 15px;
         }
